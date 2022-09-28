@@ -1,0 +1,38 @@
+---
+name: commandPager
+version: 0.0.1
+main: folosuru\commandPager\commandPager
+api: 4.1.0
+src-namespace-prefix: folosuru\commandPager
+commands:
+  next:
+    description: change Page to next
+    usage: "/next"
+    permission: commandPager.command.next
+  prev:
+    description: change Page to prev
+    usage: "/prev"
+    permission: commandPager.command.prev
+  nowpage:
+    description: Show now page
+    usage: "/nowpage"
+    permission: commandPager.command.nowpage
+  select:
+    description: select content
+    usage: "/select"
+    permission: commandPager.command.select
+    
+permissions:
+  commandPager.command.next:
+    description: "Allows the user to run the example command"
+    default: true
+  commandPager.command.prev:
+    description: "Allows the user to run the example command"
+    default: true
+  commandPager.command.nowpage:
+    description: "Allows the user to run the example command"
+    default: true
+  commandPager.command.select:
+    description: "Allows the user to run the example command"
+    default: true    
+...
